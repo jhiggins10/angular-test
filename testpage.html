@@ -1,0 +1,37 @@
+	<!DOCTYPE html>
+	<!-- simple angular test page by jack higgins--> 
+	<html>
+	<!-- script to link webpage to angular features-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<body>
+
+	<div ng-app="">
+	 
+	<p>this is a magic webpage:</p>
+	<p>what is your first name?</p>
+	<!-- stores text as a variable called FirstName-->
+	<p>first Name: <input type="text" ng-model="FirstName"></p>
+	<p>what is your last name?</p>
+	<!-- stores text as a variable called LastName-->
+	<p>Last Name: <input type="text" ng-model="LastName"></p>
+	<p>How old are you?</p>
+	<!-- stores text as a variable called Age-->
+	<p>Age: <input type="text" ng-model="age"></p>
+	<p>where would you like to go on holiday</p>
+	<!-- stores text as a variable called holiday-->
+	<p>Holiday destination: <input type="text" ng-model="holiday"></p>
+	<p>What's your favorite color?:</p>
+	<!--AngularJS sees what has been entered into the box and change the box color based on the expression-->
+	<div ng-app="" ng-init="myCol='lightblue'">
+	<input style="background-color:{{myCol}}" ng-model="myCol">
+	</div> 
+	<p ng-bind="FirstName"></p>
+	<p ng-bind="LastName"></p>
+	<p ng-bind="age"></p> 
+	<p ng-bind="holiday"></p>
+
+
+
+	</div>
+
+</body>
